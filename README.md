@@ -1,29 +1,22 @@
 # Календарь звонков (продолжение)
 
-
 [![hexlet-check](https://github.com/Mineclinee/ai-for-developers-project-387/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Mineclinee/ai-for-developers-project-387/actions)
 
-Интегрируйте работу агентов в GitHub проект
+Учебный проект об интеграции агентов в GitHub. Здесь используется приложение из [первой части «Календаря звонков»](https://github.com/Mineclinee/ai-for-developers-project-386/tree/5f9238ddabc6590a79fcd3b6f671b4199c7f2c63).
 
 Учебный проект Хекслета: https://ru.hexlet.io/programs/ai-for-developers
 Как это должно работать: https://files.hexlet.app/a/2ipc5m
 
-## Стек
-
-- Разное
-
-## Установка
-
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
+## Запуск
 
 ```bash
 git clone https://github.com/Mineclinee/ai-for-developers-project-387.git
 cd ai-for-developers-project-387
+docker build -t hexlet-call-calendar-387 .
+docker run --rm -e PORT=8080 -p 8080:8080 hexlet-call-calendar-387
 ```
 
-## Использование
-
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+Главная страница доступна по адресу [http://localhost:8080](http://localhost:8080). Для запуска без Docker используйте `node server.mjs`.
 
 ---
 
